@@ -2,7 +2,8 @@
 	"private": true,
 	"scripts": {
 		"watch": "nodemon index.js",
-		"start": "node index.js"
+		"start": "node index.js",
+		"demo-env": "cross-env COHORT='webpt14' node printCohort.js"
 	},
 	"devDependencies": {
 		"cross-env": "^7.0.2",
@@ -13,6 +14,7 @@
 		"express": "^4.17.1",
 		"helmet": "^3.22.0",
 		"knex": "^0.20.13",
+		"morgan": "^1.10.0",
 		"sqlite3": "^4.1.1"
 	}
 }
